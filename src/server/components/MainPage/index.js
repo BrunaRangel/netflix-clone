@@ -62,17 +62,17 @@ class App extends Component {
                     <img className="poster" src={item.poster_path} alt="item.original_title" />
                   </div>
                   <div className="wrap">
-                  <div className="box_info">
+                    <div className="box_title">
+                      <h2 className="titles">{item.title}</h2>
+                      <p className="overview">{item.overview}</p> 
+                      <p className="popularity">Popularidade: {item.popularity}</p>
+                    </div>
+                    <div className="box_info">
                       <p className="average">Nota: {item.vote_average}</p>
                       <p className="date">{item.release_date}</p>
                     </div>
-                    <div className="box_title">
-                      <p className="popularity">Popularidade: {item.popularity}</p>
-                      <h2 className="titles">{item.title}</h2>
-                      <p className="overview">{item.overview}</p> 
-                      <div className="btn">
-                        <button>Assistir</button>
-                      </div>
+                    <div className="btn">
+                      <button>Assistir</button>
                     </div>
                   </div>
                 </div>        
@@ -86,18 +86,18 @@ class App extends Component {
                     <img className="poster" src={item.poster_path} alt="item.original_name" />
                   </div>
                   <div className="wrap">
-                  <div className="box_info">
-                      <p className="average">Nota: {item.vote_average}</p>
-                      <p className="date">{item.release_date}</p>
-                    </div>
                     <div className="box_title">
-                      <p className="popularity">Popularidade: {item.popularity}</p>
                       <h2 className="titles">{item.name}</h2>
                       <p className="overview">{item.overview}</p> 
-                      <div className="btn">
-                        <button>Assistir</button>
-                      </div>
+                      <p className="popularity">Popularidade: {item.popularity}</p>
                     </div>
+                    <div className="box_info">
+                      <p className="average">Nota: {item.vote_average}</p>
+                      <p className="date">{item.first_air_date}</p>
+                    </div>
+                    <div className="btn">
+                      <button>Assistir</button>
+                    </div>  
                   </div>
                 </div>        
               ))}

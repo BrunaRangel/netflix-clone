@@ -20,45 +20,44 @@ const Container = styled.div`
   align-items: space-around;
 `;
 
+const Icones = styled.div`
+  width:40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Image = styled.img`
+  width: 30px;
+  margin-right: 15px;
+`;
+
 const Box_logo = styled.div`
-  width:33%;
+  width:20%;
   height:100%;
   display: flex;
   justify-content: flex-start;
-  margin-left: 15px;
   align-items: center;
 `;
 
 const Img = styled.img`
-  height: 50%;
-`;
-
-const Icones = styled.div`
-  width:25%;
-  height: 100%;
-  display: flex;
-flex-direction: row;
-align-items: center;
-
-`;
-
-const Image = styled.img`
-width: 30px;
-margin-right: 10px;
+  width: 25%;
 `;
 
 const Box_store = styled.div`
-  width: %;
+  width: 40%;
   height: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
 }
 `;
 
 const Img_store = styled.img`
-  height: 50%;
-  margin-right: 30px;
+  width: 30%;
+  margin-right: 25px;
 `;
 
 class Footer extends Component {
@@ -66,14 +65,14 @@ class Footer extends Component {
   render() {
     return (
       <Container>
-        <Box_logo>
-          <Img src = {logo} alt="" />
-        </Box_logo>
         <Icones>
           <Image src={facebook} alt="Logotipo do Facebook" />
           <Image src={instagram} alt="Logotipo do Instagram" />
           <Image src={twitter} alt="Logotipo do Twitter" />
         </Icones>
+        <Box_logo>
+          <Img src = {logo} alt="" />
+        </Box_logo>
         <Box_store>
           <Img_store src = {apple} alt="" />
           <Img_store src = {google} alt="" />
